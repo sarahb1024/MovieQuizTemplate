@@ -110,6 +110,24 @@
     <Compile Include="frmQuestion3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmQuestion4.Designer.vb">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion5.designer.vb">
+      <DependentUpon>frmQuestion5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion6.designer.vb">
+      <DependentUpon>frmQuestion6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion6.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -143,6 +161,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuestion3.resx">
       <DependentUpon>frmQuestion3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion4.resx">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion5.resx">
+      <DependentUpon>frmQuestion5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion6.resx">
+      <DependentUpon>frmQuestion6.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
