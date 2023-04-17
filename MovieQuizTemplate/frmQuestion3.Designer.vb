@@ -23,11 +23,12 @@ Partial Class frmQuestion3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnAns1 = New System.Windows.Forms.RadioButton()
-        Me.btnAns2 = New System.Windows.Forms.RadioButton()
-        Me.btnAns3 = New System.Windows.Forms.RadioButton()
-        Me.btnAns4 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnNext = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,49 +42,49 @@ Partial Class frmQuestion3
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "The movie Titanic is celebrating its..."
         '
-        'btnAns1
+        'btnAnswer1
         '
-        Me.btnAns1.AutoSize = True
-        Me.btnAns1.Location = New System.Drawing.Point(418, 122)
-        Me.btnAns1.Name = "btnAns1"
-        Me.btnAns1.Size = New System.Drawing.Size(117, 17)
-        Me.btnAns1.TabIndex = 1
-        Me.btnAns1.TabStop = True
-        Me.btnAns1.Text = "15 year anniversary"
-        Me.btnAns1.UseVisualStyleBackColor = True
+        Me.btnAnswer1.AutoSize = True
+        Me.btnAnswer1.Location = New System.Drawing.Point(418, 122)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(117, 17)
+        Me.btnAnswer1.TabIndex = 1
+        Me.btnAnswer1.TabStop = True
+        Me.btnAnswer1.Text = "15 year anniversary"
+        Me.btnAnswer1.UseVisualStyleBackColor = True
         '
-        'btnAns2
+        'btnAnswer2
         '
-        Me.btnAns2.AutoSize = True
-        Me.btnAns2.Location = New System.Drawing.Point(418, 175)
-        Me.btnAns2.Name = "btnAns2"
-        Me.btnAns2.Size = New System.Drawing.Size(117, 17)
-        Me.btnAns2.TabIndex = 2
-        Me.btnAns2.TabStop = True
-        Me.btnAns2.Text = "18 year anniversary"
-        Me.btnAns2.UseVisualStyleBackColor = True
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Location = New System.Drawing.Point(418, 175)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(117, 17)
+        Me.btnAnswer2.TabIndex = 2
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "18 year anniversary"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
         '
-        'btnAns3
+        'btnAnswer3
         '
-        Me.btnAns3.AutoSize = True
-        Me.btnAns3.Location = New System.Drawing.Point(418, 243)
-        Me.btnAns3.Name = "btnAns3"
-        Me.btnAns3.Size = New System.Drawing.Size(117, 17)
-        Me.btnAns3.TabIndex = 3
-        Me.btnAns3.TabStop = True
-        Me.btnAns3.Text = "22 year anniversary"
-        Me.btnAns3.UseVisualStyleBackColor = True
+        Me.btnAnswer3.AutoSize = True
+        Me.btnAnswer3.Location = New System.Drawing.Point(418, 243)
+        Me.btnAnswer3.Name = "btnAnswer3"
+        Me.btnAnswer3.Size = New System.Drawing.Size(117, 17)
+        Me.btnAnswer3.TabIndex = 3
+        Me.btnAnswer3.TabStop = True
+        Me.btnAnswer3.Text = "22 year anniversary"
+        Me.btnAnswer3.UseVisualStyleBackColor = True
         '
-        'btnAns4
+        'btnAnswer4
         '
-        Me.btnAns4.AutoSize = True
-        Me.btnAns4.Location = New System.Drawing.Point(418, 302)
-        Me.btnAns4.Name = "btnAns4"
-        Me.btnAns4.Size = New System.Drawing.Size(117, 17)
-        Me.btnAns4.TabIndex = 4
-        Me.btnAns4.TabStop = True
-        Me.btnAns4.Text = "25 year anniversary"
-        Me.btnAns4.UseVisualStyleBackColor = True
+        Me.btnAnswer4.AutoSize = True
+        Me.btnAnswer4.Location = New System.Drawing.Point(418, 302)
+        Me.btnAnswer4.Name = "btnAnswer4"
+        Me.btnAnswer4.Size = New System.Drawing.Size(117, 17)
+        Me.btnAnswer4.TabIndex = 4
+        Me.btnAnswer4.TabStop = True
+        Me.btnAnswer4.Text = "25 year anniversary"
+        Me.btnAnswer4.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -95,16 +96,26 @@ Partial Class frmQuestion3
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(611, 337)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(144, 52)
+        Me.btnNext.TabIndex = 6
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
         'frmQuestion3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.btnAns4)
-        Me.Controls.Add(Me.btnAns3)
-        Me.Controls.Add(Me.btnAns2)
-        Me.Controls.Add(Me.btnAns1)
+        Me.Controls.Add(Me.btnAnswer4)
+        Me.Controls.Add(Me.btnAnswer3)
+        Me.Controls.Add(Me.btnAnswer2)
+        Me.Controls.Add(Me.btnAnswer1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmQuestion3"
         Me.Text = "frmQuestion3"
@@ -115,9 +126,10 @@ Partial Class frmQuestion3
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnAns1 As RadioButton
-    Friend WithEvents btnAns2 As RadioButton
-    Friend WithEvents btnAns3 As RadioButton
-    Friend WithEvents btnAns4 As RadioButton
+    Friend WithEvents btnAnswer1 As RadioButton
+    Friend WithEvents btnAnswer2 As RadioButton
+    Friend WithEvents btnAnswer3 As RadioButton
+    Friend WithEvents btnAnswer4 As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnNext As Button
 End Class
