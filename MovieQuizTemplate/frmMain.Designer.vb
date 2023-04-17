@@ -44,7 +44,7 @@ Partial Class frmMain
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(1235, 857)
+        Me.btnQuit.Location = New System.Drawing.Point(1023, 301)
         Me.btnQuit.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(166, 68)
@@ -55,7 +55,7 @@ Partial Class frmMain
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(1235, 945)
+        Me.btnStart.Location = New System.Drawing.Point(1023, 383)
         Me.btnStart.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(166, 68)
@@ -68,7 +68,7 @@ Partial Class frmMain
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 50.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(530, 427)
+        Me.Label1.Location = New System.Drawing.Point(530, -2)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(366, 76)
         Me.Label1.TabIndex = 2
@@ -76,14 +76,14 @@ Partial Class frmMain
         '
         'ProgressBarQ1
         '
-        Me.ProgressBarQ1.Location = New System.Drawing.Point(518, 990)
+        Me.ProgressBarQ1.Location = New System.Drawing.Point(518, 301)
         Me.ProgressBarQ1.Name = "ProgressBarQ1"
         Me.ProgressBarQ1.Size = New System.Drawing.Size(378, 23)
         Me.ProgressBarQ1.TabIndex = 3
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(518, 942)
+        Me.txtName.Location = New System.Drawing.Point(518, 330)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(378, 38)
         Me.txtName.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class frmMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(327, 945)
+        Me.Label2.Location = New System.Drawing.Point(327, 333)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(170, 31)
         Me.Label2.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class frmMain
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_2
-        Me.PictureBox5.Location = New System.Drawing.Point(313, 620)
+        Me.PictureBox5.Location = New System.Drawing.Point(214, 12)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(184, 272)
         Me.PictureBox5.TabIndex = 10
@@ -109,7 +109,7 @@ Partial Class frmMain
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_3
-        Me.PictureBox4.Location = New System.Drawing.Point(645, 560)
+        Me.PictureBox4.Location = New System.Drawing.Point(620, 104)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(138, 180)
         Me.PictureBox4.TabIndex = 9
@@ -118,7 +118,7 @@ Partial Class frmMain
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_5
-        Me.PictureBox3.Location = New System.Drawing.Point(1235, 560)
+        Me.PictureBox3.Location = New System.Drawing.Point(1235, 131)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(184, 272)
         Me.PictureBox3.TabIndex = 8
@@ -127,7 +127,7 @@ Partial Class frmMain
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_4
-        Me.PictureBox2.Location = New System.Drawing.Point(907, 620)
+        Me.PictureBox2.Location = New System.Drawing.Point(914, 12)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(184, 272)
         Me.PictureBox2.TabIndex = 7
@@ -136,7 +136,7 @@ Partial Class frmMain
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_1
-        Me.PictureBox1.Location = New System.Drawing.Point(46, 560)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(184, 272)
         Me.PictureBox1.TabIndex = 6
@@ -150,7 +150,8 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1924, 1061)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(1425, 475)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
