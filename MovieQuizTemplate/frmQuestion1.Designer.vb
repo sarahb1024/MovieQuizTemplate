@@ -23,7 +23,6 @@ Partial Class frmQuestion1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
@@ -31,6 +30,7 @@ Partial Class frmQuestion1
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -45,15 +45,6 @@ Partial Class frmQuestion1
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(25, 25)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(735, 53)
-        Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "In What Year was Audrey Hepburn Born?"
         '
         'PictureBox2
         '
@@ -135,15 +126,25 @@ Partial Class frmQuestion1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(27, 36)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(750, 46)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "In What Year was Audrey Hepburn Born?"
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "frmQuestion1"
         Me.Text = "frmQuestion1"
@@ -157,7 +158,6 @@ Partial Class frmQuestion1
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents RadioButton1 As RadioButton
@@ -165,4 +165,5 @@ Partial Class frmQuestion1
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label1 As Label
 End Class
