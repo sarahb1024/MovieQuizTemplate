@@ -22,9 +22,29 @@ Partial Class frmHighScore
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(592, 364)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(75, 23)
+        Me.btnStart.TabIndex = 0
+        Me.btnStart.Text = "START"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'frmHighScore
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnStart)
+        Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents btnStart As Button
 End Class
