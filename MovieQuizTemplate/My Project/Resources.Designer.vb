@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property dumbo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("dumbo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property fantasia() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("fantasia", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property image_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("image 1", resourceCulture)
@@ -146,6 +166,26 @@ Namespace My.Resources
         Friend ReadOnly Property image_9() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("image 9", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property snow_white() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("snow white", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Steamboat_Willie() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Steamboat Willie", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

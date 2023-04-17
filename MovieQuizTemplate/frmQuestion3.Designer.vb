@@ -24,14 +24,18 @@ Partial Class frmQuestion3
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,37 +43,36 @@ Partial Class frmQuestion3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(28, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1004, 46)
-        Me.Label1.TabIndex = 20
-        Me.Label1.Text = "Congratulations You Score Will Be To the Hall Of Fame"
+        Me.Label1.Size = New System.Drawing.Size(1056, 31)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "WHAT WAS THE FIRST FEATURE-LENGTH ANIMATED MOVIE EVER RELEASED?"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer3)
         Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
-        Me.GroupBox1.Location = New System.Drawing.Point(486, 131)
+        Me.GroupBox1.Location = New System.Drawing.Point(244, 97)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(153, 239)
+        Me.GroupBox1.Size = New System.Drawing.Size(750, 239)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'RadioButton1
+        'btnAnswer3
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(20, 16)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(126, 50)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "1920"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.btnAnswer3.AutoSize = True
+        Me.btnAnswer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer3.Location = New System.Drawing.Point(20, 16)
+        Me.btnAnswer3.Name = "btnAnswer3"
+        Me.btnAnswer3.Size = New System.Drawing.Size(190, 50)
+        Me.btnAnswer3.TabIndex = 5
+        Me.btnAnswer3.Text = "Fantasia"
+        Me.btnAnswer3.UseVisualStyleBackColor = True
         '
         'RadioButton4
         '
@@ -77,22 +80,22 @@ Partial Class frmQuestion3
         Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton4.Location = New System.Drawing.Point(20, 184)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(126, 50)
+        Me.RadioButton4.Size = New System.Drawing.Size(167, 50)
         Me.RadioButton4.TabIndex = 8
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "1935"
+        Me.RadioButton4.Text = "Dumbo"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Checked = True
         Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(20, 72)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(126, 50)
+        Me.RadioButton2.Size = New System.Drawing.Size(653, 50)
         Me.RadioButton2.TabIndex = 6
         Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "1921"
+        Me.RadioButton2.Text = "Snow White and the Seven Dwarfs"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton3
@@ -101,26 +104,45 @@ Partial Class frmQuestion3
         Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton3.Location = New System.Drawing.Point(20, 128)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(126, 50)
+        Me.RadioButton3.Size = New System.Drawing.Size(338, 50)
         Me.RadioButton3.TabIndex = 7
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "1931"
+        Me.RadioButton3.Text = "Steamboat Willie"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(899, 352)
+        Me.Button1.Location = New System.Drawing.Point(977, 394)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(107, 55)
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.MovieQuizTemplate.My.Resources.Resources.snow_white
+        Me.PictureBox4.Location = New System.Drawing.Point(461, 325)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(257, 168)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 21
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.MovieQuizTemplate.My.Resources.Resources.Steamboat_Willie
+        Me.PictureBox3.Location = New System.Drawing.Point(820, 277)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(121, 172)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
+        '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_7
-        Me.PictureBox2.Location = New System.Drawing.Point(899, 159)
+        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.fantasia
+        Me.PictureBox2.Location = New System.Drawing.Point(977, 113)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 130)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -129,10 +151,11 @@ Partial Class frmQuestion3
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.image_6
-        Me.PictureBox1.Location = New System.Drawing.Point(82, 131)
+        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.dumbo
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 136)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(154, 179)
+        Me.PictureBox1.Size = New System.Drawing.Size(217, 200)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 17
         Me.PictureBox1.TabStop = False
         '
@@ -140,16 +163,20 @@ Partial Class frmQuestion3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1069, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(1121, 505)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmQuestion3"
         Me.Text = "frmQuestion3"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -159,11 +186,13 @@ Partial Class frmQuestion3
 
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents btnAnswer3 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class
