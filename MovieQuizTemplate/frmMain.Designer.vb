@@ -22,11 +22,11 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtPlayerName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -40,27 +40,27 @@ Partial Class frmMain
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnQuit
         '
-        Me.Button1.Location = New System.Drawing.Point(1235, 857)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(166, 68)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Quit"
-        Me.Button1.UseVisualStyleBackColor = True
-        Me.Button1.UseWaitCursor = True
+        Me.btnQuit.Location = New System.Drawing.Point(1235, 857)
+        Me.btnQuit.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(166, 68)
+        Me.btnQuit.TabIndex = 0
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseWaitCursor = True
         '
-        'Button2
+        'btnStart
         '
-        Me.Button2.Location = New System.Drawing.Point(1235, 945)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(166, 68)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Start"
-        Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.UseWaitCursor = True
+        Me.btnStart.Location = New System.Drawing.Point(1235, 945)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(166, 68)
+        Me.btnStart.TabIndex = 1
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        Me.btnStart.UseWaitCursor = True
         '
         'Label1
         '
@@ -79,12 +79,12 @@ Partial Class frmMain
         Me.ProgressBar1.Size = New System.Drawing.Size(453, 23)
         Me.ProgressBar1.TabIndex = 3
         '
-        'TextBox1
+        'txtPlayerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(518, 942)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(378, 38)
-        Me.TextBox1.TabIndex = 4
+        Me.txtPlayerName.Location = New System.Drawing.Point(518, 942)
+        Me.txtPlayerName.Name = "txtPlayerName"
+        Me.txtPlayerName.Size = New System.Drawing.Size(378, 38)
+        Me.txtPlayerName.TabIndex = 4
         '
         'Label2
         '
@@ -151,11 +151,11 @@ Partial Class frmMain
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPlayerName)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnStart)
+        Me.Controls.Add(Me.btnQuit)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Name = "frmMain"
@@ -170,11 +170,11 @@ Partial Class frmMain
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents btnStart As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPlayerName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
