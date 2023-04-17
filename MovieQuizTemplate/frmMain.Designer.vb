@@ -22,10 +22,11 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBarQ1 = New System.Windows.Forms.ProgressBar()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -33,6 +34,7 @@ Partial Class frmMain
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.tmrQuestion1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,12 +74,12 @@ Partial Class frmMain
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Movie Quiz"
         '
-        'ProgressBar1
+        'ProgressBarQ1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(807, 1022)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(453, 23)
-        Me.ProgressBar1.TabIndex = 3
+        Me.ProgressBarQ1.Location = New System.Drawing.Point(518, 990)
+        Me.ProgressBarQ1.Name = "ProgressBarQ1"
+        Me.ProgressBarQ1.Size = New System.Drawing.Size(378, 23)
+        Me.ProgressBarQ1.TabIndex = 3
         '
         'txtName
         '
@@ -140,6 +142,10 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'tmrQuestion1
+        '
+        Me.tmrQuestion1.Interval = 1000
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
@@ -152,7 +158,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.ProgressBarQ1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnQuit)
@@ -173,7 +179,7 @@ Partial Class frmMain
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnStart As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents ProgressBarQ1 As ProgressBar
     Friend WithEvents txtName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
@@ -181,4 +187,5 @@ Partial Class frmMain
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents tmrQuestion1 As Timer
 End Class
