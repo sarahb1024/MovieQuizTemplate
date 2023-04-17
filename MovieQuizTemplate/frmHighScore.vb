@@ -10,10 +10,10 @@
 
     Public Sub doScore()
         If (playerScore < 1) Then
-            lblMessage.text = " Sorry Your Score Waas Not Good Enough"
+            Label1.Text = " Sorry Your Score Waas Not Good Enough"
         Else
-            lblMessage.Text = "Congratulations Your ScoreWill be Added To The Hall Of Fame"
-            lstHighScore.Items.Add(playerName & vbTab & vbTab & playerScore)
+            Label1.Text = "Congratulations Your ScoreWill be Added To The Hall Of Fame"
+            IstHighScore.Items.Add(playerName & vbTab & vbTab & playerScore)
         End If
     End Sub
 
