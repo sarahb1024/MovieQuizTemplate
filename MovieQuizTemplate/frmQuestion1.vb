@@ -15,5 +15,13 @@
         frmQ2.Show()
 
         Me.Hide()
+
+    Public Sub init()
+        frmMain.playTrack("question1.mp3")
+
+        bntAnswer1.Checked = False
+        bntAnswer2.Checked = False
+        bntAnswer3.Checked = False
+        bntAnswer4.Checked = False
     End Sub
 End Class

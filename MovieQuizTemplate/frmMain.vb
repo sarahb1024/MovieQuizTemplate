@@ -22,7 +22,10 @@
         Application.Exit()
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_Enter(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer1.Enter
 
+    Public Sub playTrack(ByVal track As String)
+        wmpQuiz.Ctlcontrols.stop()
+        wmpQuiz.URL = track
+        wmpQuiz.Ctlcontrols.play()
     End Sub
 End Class
