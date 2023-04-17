@@ -168,5 +168,17 @@
   <ItemGroup>
     <None Include="Resources\image 7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
