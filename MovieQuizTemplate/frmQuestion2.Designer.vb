@@ -24,11 +24,11 @@ Partial Class frmQuestion2
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class frmQuestion2
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer2)
         Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
@@ -59,17 +59,18 @@ Partial Class frmQuestion2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'RadioButton1
+        'btnAnswer2
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(20, 16)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(126, 50)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "1920"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Checked = True
+        Me.btnAnswer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer2.Location = New System.Drawing.Point(20, 16)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(126, 50)
+        Me.btnAnswer2.TabIndex = 5
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "1920"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
         '
         'RadioButton4
         '
@@ -79,7 +80,6 @@ Partial Class frmQuestion2
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(126, 50)
         Me.RadioButton4.TabIndex = 8
-        Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "1935"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
@@ -91,7 +91,6 @@ Partial Class frmQuestion2
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(126, 50)
         Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "1921"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
@@ -103,19 +102,18 @@ Partial Class frmQuestion2
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(126, 50)
         Me.RadioButton3.TabIndex = 7
-        Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "1931"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnNext
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(862, 359)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 55)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.Location = New System.Drawing.Point(862, 359)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(107, 55)
+        Me.btnNext.TabIndex = 11
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -145,7 +143,7 @@ Partial Class frmQuestion2
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnNext)
         Me.Name = "frmQuestion2"
         Me.Text = "frmQuestion2"
         Me.GroupBox1.ResumeLayout(False)
@@ -159,11 +157,11 @@ Partial Class frmQuestion2
 
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnNext As Button
 End Class
