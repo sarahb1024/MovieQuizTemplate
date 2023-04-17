@@ -23,7 +23,7 @@ Partial Class frmHighScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnAgain = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblMessage = New System.Windows.Forms.Label()
         Me.IstHighScore = New System.Windows.Forms.ListBox()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -37,15 +37,15 @@ Partial Class frmHighScore
         Me.btnAgain.Text = "Again"
         Me.btnAgain.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblMessage
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(757, 31)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Congratulations!  Your score will be added to the Hall of Fame"
+        Me.lblMessage.AutoSize = True
+        Me.lblMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMessage.Location = New System.Drawing.Point(12, 65)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(757, 31)
+        Me.lblMessage.TabIndex = 1
+        Me.lblMessage.Text = "Congratulations!  Your score will be added to the Hall of Fame"
         '
         'IstHighScore
         '
@@ -71,7 +71,7 @@ Partial Class frmHighScore
         Me.ClientSize = New System.Drawing.Size(821, 478)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.IstHighScore)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.btnAgain)
         Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
@@ -81,7 +81,7 @@ Partial Class frmHighScore
     End Sub
 
     Friend WithEvents btnAgain As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblMessage As Label
     Friend WithEvents IstHighScore As ListBox
     Friend WithEvents btnQuit As Button
 End Class
