@@ -61,14 +61,11 @@ Partial Class frmQuestion2
         '
         'btnAnswer1
         '
-        Me.btnAnswer1.AutoSize = True
-        Me.btnAnswer1.Checked = True
         Me.btnAnswer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnswer1.Location = New System.Drawing.Point(20, 16)
         Me.btnAnswer1.Name = "btnAnswer1"
         Me.btnAnswer1.Size = New System.Drawing.Size(126, 50)
         Me.btnAnswer1.TabIndex = 5
-        Me.btnAnswer1.TabStop = True
         Me.btnAnswer1.Text = "1920"
         Me.btnAnswer1.UseVisualStyleBackColor = True
         '

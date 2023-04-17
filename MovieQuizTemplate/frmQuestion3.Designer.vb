@@ -88,13 +88,11 @@ Partial Class frmQuestion3
         'btnAnswer2
         '
         Me.btnAnswer2.AutoSize = True
-        Me.btnAnswer2.Checked = True
         Me.btnAnswer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnswer2.Location = New System.Drawing.Point(20, 72)
         Me.btnAnswer2.Name = "btnAnswer2"
         Me.btnAnswer2.Size = New System.Drawing.Size(653, 50)
         Me.btnAnswer2.TabIndex = 6
-        Me.btnAnswer2.TabStop = True
         Me.btnAnswer2.Text = "Snow White and the Seven Dwarfs"
         Me.btnAnswer2.UseVisualStyleBackColor = True
         '

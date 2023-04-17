@@ -71,13 +71,11 @@ Partial Class frmQuestion1
         'btnAnswer3
         '
         Me.btnAnswer3.AutoSize = True
-        Me.btnAnswer3.Checked = True
         Me.btnAnswer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAnswer3.Location = New System.Drawing.Point(20, 128)
         Me.btnAnswer3.Name = "btnAnswer3"
         Me.btnAnswer3.Size = New System.Drawing.Size(176, 50)
         Me.btnAnswer3.TabIndex = 7
-        Me.btnAnswer3.TabStop = True
         Me.btnAnswer3.Text = "Scream"
         Me.btnAnswer3.UseVisualStyleBackColor = True
         '
