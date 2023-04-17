@@ -28,7 +28,7 @@ Partial Class frmQuestion3
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -109,15 +109,15 @@ Partial Class frmQuestion3
         Me.btnAnswer3.Text = "Steamboat Willie"
         Me.btnAnswer3.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnNext
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(977, 394)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 55)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnNext.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNext.Location = New System.Drawing.Point(977, 394)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(107, 55)
+        Me.btnNext.TabIndex = 16
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'PictureBox4
         '
@@ -169,7 +169,7 @@ Partial Class frmQuestion3
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmQuestion3"
         Me.Text = "frmQuestion3"
@@ -192,7 +192,7 @@ Partial Class frmQuestion3
     Friend WithEvents btnAnswer3 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnNext As Button
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
 End Class

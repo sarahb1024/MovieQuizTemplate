@@ -26,7 +26,7 @@ Partial Class frmMain
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -79,12 +79,12 @@ Partial Class frmMain
         Me.ProgressBar1.Size = New System.Drawing.Size(453, 23)
         Me.ProgressBar1.TabIndex = 3
         '
-        'txtPlayerName
+        'txtName
         '
-        Me.txtPlayerName.Location = New System.Drawing.Point(518, 942)
-        Me.txtPlayerName.Name = "txtPlayerName"
-        Me.txtPlayerName.Size = New System.Drawing.Size(378, 38)
-        Me.txtPlayerName.TabIndex = 4
+        Me.txtName.Location = New System.Drawing.Point(518, 942)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(378, 38)
+        Me.txtName.TabIndex = 4
         '
         'Label2
         '
@@ -151,7 +151,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtPlayerName)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnStart)
@@ -174,7 +174,7 @@ Partial Class frmMain
     Friend WithEvents btnStart As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents txtPlayerName As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
