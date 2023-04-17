@@ -24,10 +24,10 @@ Partial Class frmQuestion3
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
+        Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -52,10 +52,10 @@ Partial Class frmQuestion3
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnAnswer1)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer4)
+        Me.GroupBox1.Controls.Add(Me.btnAnswer2)
         Me.GroupBox1.Controls.Add(Me.btnAnswer3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Location = New System.Drawing.Point(244, 97)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(750, 239)
@@ -63,51 +63,51 @@ Partial Class frmQuestion3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'btnAnswer1
+        '
+        Me.btnAnswer1.AutoSize = True
+        Me.btnAnswer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer1.Location = New System.Drawing.Point(20, 16)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(190, 50)
+        Me.btnAnswer1.TabIndex = 5
+        Me.btnAnswer1.Text = "Fantasia"
+        Me.btnAnswer1.UseVisualStyleBackColor = True
+        '
+        'btnAnswer4
+        '
+        Me.btnAnswer4.AutoSize = True
+        Me.btnAnswer4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer4.Location = New System.Drawing.Point(20, 184)
+        Me.btnAnswer4.Name = "btnAnswer4"
+        Me.btnAnswer4.Size = New System.Drawing.Size(167, 50)
+        Me.btnAnswer4.TabIndex = 8
+        Me.btnAnswer4.Text = "Dumbo"
+        Me.btnAnswer4.UseVisualStyleBackColor = True
+        '
+        'btnAnswer2
+        '
+        Me.btnAnswer2.AutoSize = True
+        Me.btnAnswer2.Checked = True
+        Me.btnAnswer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAnswer2.Location = New System.Drawing.Point(20, 72)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(653, 50)
+        Me.btnAnswer2.TabIndex = 6
+        Me.btnAnswer2.TabStop = True
+        Me.btnAnswer2.Text = "Snow White and the Seven Dwarfs"
+        Me.btnAnswer2.UseVisualStyleBackColor = True
+        '
         'btnAnswer3
         '
         Me.btnAnswer3.AutoSize = True
         Me.btnAnswer3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer3.Location = New System.Drawing.Point(20, 16)
+        Me.btnAnswer3.Location = New System.Drawing.Point(20, 128)
         Me.btnAnswer3.Name = "btnAnswer3"
-        Me.btnAnswer3.Size = New System.Drawing.Size(190, 50)
-        Me.btnAnswer3.TabIndex = 5
-        Me.btnAnswer3.Text = "Fantasia"
+        Me.btnAnswer3.Size = New System.Drawing.Size(338, 50)
+        Me.btnAnswer3.TabIndex = 7
+        Me.btnAnswer3.Text = "Steamboat Willie"
         Me.btnAnswer3.UseVisualStyleBackColor = True
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton4.Location = New System.Drawing.Point(20, 184)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(167, 50)
-        Me.RadioButton4.TabIndex = 8
-        Me.RadioButton4.Text = "Dumbo"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Checked = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(20, 72)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(653, 50)
-        Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Snow White and the Seven Dwarfs"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton3.Location = New System.Drawing.Point(20, 128)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(338, 50)
-        Me.RadioButton3.TabIndex = 7
-        Me.RadioButton3.Text = "Steamboat Willie"
-        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -186,10 +186,10 @@ Partial Class frmQuestion3
 
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnAnswer1 As RadioButton
+    Friend WithEvents btnAnswer4 As RadioButton
+    Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents btnAnswer3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button

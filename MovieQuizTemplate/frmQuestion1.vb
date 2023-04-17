@@ -11,7 +11,21 @@
 
     End Sub
 
-    Private Sub btnAnswer1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+    Private Sub btnAnswer1_CheckedChanged(sender As Object, e As EventArgs) Handles btnAnswer1.CheckedChanged
+
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If (btnAnswer3.Checked) Then
+            playerScore = playerScore + 1
+        End If
+
+        frmQuestion1.Show()
+
+        Me.Hide()
+    End Sub
+
+    Private Sub btnAnswer1_CheckedChanged_1(sender As Object, e As EventArgs) Handles btnAnswer3.CheckedChanged
 
     End Sub
 End Class
