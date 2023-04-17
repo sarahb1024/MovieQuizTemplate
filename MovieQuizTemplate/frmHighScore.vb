@@ -3,4 +3,21 @@
         frmMain.Show()
         Me.Hide()
     End Sub
+
+    Private Sub IstHighScore_SelectedIndexChanged(sender As Object, e As EventArgs) Handles IstHighScore.SelectedIndexChanged
+
+    End Sub
+
+    Public Sub doScore()
+        If (playerScore < 1) Then
+            lblMessage.text = " Sorry Your Score Waas Not Good Enough"
+        Else
+            lblMessage.Text = "Congratulations Your ScoreWill be Added To The Hall Of Fame"
+            lstHighScore.Items.Add(playerName & vbTab & vbTab & playerScore)
+        End If
+    End Sub
+
+    Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
+        Application.Exit()
+    End Sub
 End Class
